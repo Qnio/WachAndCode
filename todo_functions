@@ -1,0 +1,27 @@
+var todoPeter = ['item 1', 'item 2', 'item 3', 'item 4'];
+var todoDomi = ['item 1', 'item 2', 'item 3', 'item 4'];
+
+//function that display todo list
+function displayTodo( listTodo ) {
+  console.log( listTodo );
+}
+
+//adding task to the end of the list
+function addTodo( listTodo, newTodoTask ) {
+  listTodo.push( newTodoTask );
+  displayTodo( listTodo );
+}
+
+//changing tasks from the list with position parameter
+function changeTodo( listTodo, positionOnListTodo, newTodoTask ) {
+  listTodo[positionOnListTodo] = newTodoTask;
+  displayTodo( listTodo );
+}
+
+//removing task from the list with position parameter
+function removeTodoTask( listTodo, positionOnListTodo ) {
+  listTodo.splice( positionOnListTodo, 1 );
+  displayTodo( listTodo );
+}
+
+
