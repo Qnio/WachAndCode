@@ -1,0 +1,24 @@
+// Code goes here
+//object as to do list with methods that's allows manipulate with todo list
+var todoList = {
+  todo: ['item 1', 'item 2', 'item 3'],
+  //method to display todo list
+  displayTodo: function() {
+    console.log( this.todo );
+  },
+  //adding new item to todo list
+  addTodo: function( todo ) {
+    this.todo.push( todo );
+    this.displayTodo();
+  },
+  //changing values of todo list
+  changeTodo: function( position, newValue ) {
+    this.todo[position] = newValue;
+    this.displayTodo();
+  },
+  //removing tasks from todo list
+  removeItemFromTodo: function( position ){
+    this.todo.splice( position, 1);
+    this.displayTodo();
+  }
+};
